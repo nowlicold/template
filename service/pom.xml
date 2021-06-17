@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>template</artifactId>
+    <groupId>com.yuan.template</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>service</artifactId>
+
+  <dependencies>
+    <!-- 本地依赖 begin -->
+    <dependency>
+      <groupId>com.yuan.common</groupId>
+      <artifactId>common-model</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yuan.template</groupId>
+      <artifactId>api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yuan.template</groupId>
+      <artifactId>repository</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yuan.template</groupId>
+      <artifactId>integration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <!-- 本地依赖 end -->
+    <!-- 三方包依赖 begin -->
+    <!-- 三方包依赖 end -->
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <filtering>false</filtering>
+        <includes>
+          <include>**/mapper/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <!-- 忽略deploy -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
