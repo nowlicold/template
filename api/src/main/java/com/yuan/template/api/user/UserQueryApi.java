@@ -1,7 +1,7 @@
 package com.yuan.template.api.user;
 
-import com.yuan.common.model.JsonResult;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.JsonResult;
+import com.bench.common.model.PageVO;
 import com.yuan.template.api.model.User;
 import com.yuan.template.api.user.request.UserSearchRequest;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -1,11 +1,12 @@
 package com.template.common.enums;
 
-import com.yuan.common.enums.EnumBase;
+import com.bench.common.enums.EnumBase;
+import com.bench.common.enums.error.ErrorEnum;
 
 /**
  *
  */
-public enum TemplateErrorEnum implements EnumBase {
+public enum TemplateErrorEnum implements ErrorEnum {
     UNKNOWN("未知错误",1),
 
     USER_LOGIN_NOT_FOUND("用戶名未找到",2),

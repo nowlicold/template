@@ -1,7 +1,7 @@
 package com.yuan.template.service.user.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.PageVO;
 import com.yuan.template.api.model.User;
 import com.yuan.template.api.user.request.UserSearchRequest;
 import com.yuan.template.repository.entity.UserDO;

@@ -14,7 +14,7 @@
     <!-- 二方包 begin -->
     <dependencies>
         <dependency>
-            <groupId>com.yuan.common</groupId>
+            <groupId>com.bench.common</groupId>
             <artifactId>common-model</artifactId>
         </dependency>
     </dependencies>

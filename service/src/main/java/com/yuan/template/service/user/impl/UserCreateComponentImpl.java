@@ -31,7 +31,7 @@ public class UserCreateComponentImpl implements UserCreateComponent {
         int resultCount = userMapper.insert(userDO);
         if(resultCount <= 0){
             result.setSuccess(false);
-            result.setErrorEnum(TemplateErrorEnum.UNKNOWN);
+            result.setErrorCode(TemplateErrorEnum.UNKNOWN.errorCode());
             return result;
         }
         result.setId(userDO.getId());

@@ -8,7 +8,7 @@ import org.springframework.cglib.beans.BeanCopier;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.common.collect.Lists;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.PageVO;
 
 /**
  * @className UserConvert

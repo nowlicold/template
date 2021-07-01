@@ -1,6 +1,6 @@
 package com.yuan.template.api.user.request;
 
-import com.yuan.common.model.PageRequest;
+import com.bench.common.model.PageRequest;
 import com.yuan.template.api.user.enums.UserOrderByEnum;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

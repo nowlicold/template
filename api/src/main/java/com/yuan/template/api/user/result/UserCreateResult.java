@@ -1,6 +1,6 @@
 package com.yuan.template.api.user.result;
 
-import com.yuan.common.model.BaseResult;
+import com.bench.common.model.BaseResult;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

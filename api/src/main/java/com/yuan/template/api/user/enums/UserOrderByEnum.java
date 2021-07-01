@@ -1,6 +1,6 @@
 package com.yuan.template.api.user.enums;
 
-import com.yuan.common.enums.EnumBase;
+import com.bench.common.enums.EnumBase;
 
 /**
  * @className UserOrderByEnum

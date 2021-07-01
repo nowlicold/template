@@ -20,7 +20,7 @@
         <!-- 本地module 依赖 end -->
         <!-- 二方包依赖 begin -->
         <dependency>
-            <groupId>com.yuan.common</groupId>
+            <groupId>com.bench.common</groupId>
             <artifactId>common-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

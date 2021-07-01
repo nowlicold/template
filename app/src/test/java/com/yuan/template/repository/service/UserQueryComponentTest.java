@@ -1,6 +1,6 @@
 package com.yuan.template.repository.service;
 
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.PageVO;
 import com.yuan.template.api.model.User;
 import com.yuan.template.api.user.enums.UserOrderByEnum;
 import com.yuan.template.api.user.request.UserSearchRequest;

@@ -1,6 +1,6 @@
 package com.template.common.enums;
 
-import com.yuan.common.enums.BaseEnum;
+import com.bench.common.enums.BaseEnum;
 
 /**
  * @author by cold

@@ -4,8 +4,8 @@ import com.yuan.template.api.user.request.UserCreateRequest;
 import com.yuan.template.api.user.result.UserCreateResult;
 import org.springframework.stereotype.Component;
 
-import com.yuan.common.model.JsonResult;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.JsonResult;
+import com.bench.common.model.PageVO;
 import com.yuan.template.api.model.User;
 import com.yuan.template.api.user.request.UserSearchRequest;
 

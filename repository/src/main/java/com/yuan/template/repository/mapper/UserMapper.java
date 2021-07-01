@@ -1,7 +1,7 @@
 package com.yuan.template.repository.mapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.PageVO;
 import com.yuan.template.repository.entity.UserDO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;

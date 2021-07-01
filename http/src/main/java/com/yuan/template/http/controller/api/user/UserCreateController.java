@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yuan.common.model.JsonResult;
-import com.yuan.common.model.PageVO;
+import com.bench.common.model.JsonResult;
+import com.bench.common.model.PageVO;
 import com.yuan.template.api.model.User;
 import com.yuan.template.api.user.UserQueryApi;
 import com.yuan.template.api.user.request.UserSearchRequest;
