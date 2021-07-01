@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.bench</groupId>
         <artifactId>bench-dependency</artifactId>
-        <version>1.4</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.yuan.template</groupId>
     <artifactId>template</artifactId>
@@ -46,7 +46,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.bench.runtime</groupId>
+            <artifactId>bench-runtime-springboot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2021.1</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -90,16 +98,7 @@
             <!-- 本地module依赖 end-->
 
             <!-- 二方包 begin -->
-            <dependency>
-                <groupId>com.yuan.common</groupId>
-                <artifactId>common-model</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.bench.lang</groupId>
-                <artifactId>bench-lang-base</artifactId>
-                <version>1.4</version>
-            </dependency>
+           
             <!-- 二方包 end -->
 
             <!-- mysql 及 mybatis begin-->
@@ -170,18 +169,8 @@
 
     </distributionManagement>
 
-    <build>
+      <build>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <generateBackupPoms>false</generateBackupPoms>
-                </configuration>
-            </plugin>
-
-            <!-- 不忽略deploy -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -189,20 +178,9 @@
                     <skip>false</skip>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.7.RELEASE</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
+
 
 
 </project>
