@@ -168,7 +168,33 @@
     <distributionManagement>
 
     </distributionManagement>
-
+    <repositories>
+        <repository>
+            <id>yuan-nexus-releases</id>
+            <name>Team Nexus Repository</name>
+            <url>https://nexus.sparticle.com/repository/maven-releases/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>yuan-nexus-snapshots</id>
+            <name>yuan-nexus-snapshots</name>
+            <url>https://nexus.sparticle.com/repository/maven-snapshots/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
       <build>
         <plugins>
             <plugin>
